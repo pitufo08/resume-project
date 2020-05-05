@@ -53,6 +53,15 @@
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 40px;
+
+}
+.ui-menu-color-github {
+    background-color: #1c4a6c;
+
+}
+
+.ui-menu-color-interests {
+    background-color: #e74c3c;
 }
 
 /* ----------------------------------------Special paddings/margins/text */
@@ -388,3 +397,9 @@ button[type="submit"] {
         max-width: 50%;
     }
 }
+
+
+
+/* -------------------------------------------Adding Map */
+
+div#map {min-height: 360px;}
