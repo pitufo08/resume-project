@@ -1,4 +1,4 @@
-funtion fetchGitHubInformation(event){
+function fetchGitHubInformation(event){
 
     var username = $("#gh-username").val();
     if (!username) {
