@@ -16,7 +16,6 @@
     <script type="text/javascript">
         (function () {
                 emailjs.init("user_zkfODmajxdu4QzpoDWVF3");
-                emailjs.send("gmail", "pitufo08",{name:"pitufo08", notes: "The project that I want is...."});
                 })();
     </script>
 
@@ -73,7 +72,7 @@
                 <h5 class="uppercase text-center">Let's work together</h5>
             </div>
             <div class="center-form">
-                <form>
+                <form onsubmit="return sendMail(this;)" method="POST">
                     <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
                     <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email"
                         required />
@@ -89,15 +88,12 @@
             <div class="col-sm-4 ">
                 <h5 class="uppercase general-sub ">About</h5>
                 <p class="inline-block ">
-                    Full Stack Web Developer. Skilled in everything from HTML to Heroku. The capacity for structural and
-                    design thinking.
-                </p>
+             </p>
             </div>
             <div class="col-sm-4 ">
                 <h5 class="uppercase general-sub ">Download My CV</h5>
                 <p class="inline-block ">
-                    Need a printable version of my CV? Download it here.
-                    <a href="assets/cv/sample-cv.pdf" target="_blank" class="cv-pdf "><i class="fa fa-download "
+             <a href="assets/cv/sample-cv.pdf" target="_blank" class="cv-pdf "><i class="fa fa-download "
                             aria-hidden="true "></i></a>
                 </p>
             </div>
@@ -114,6 +110,7 @@
             </div>
         </div>
     </footer>
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 
 </html>
